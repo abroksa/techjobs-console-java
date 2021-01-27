@@ -112,10 +112,7 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         //try JobData.findAll() ???
-        if (someJobs.size() < 1) {
-            System.out.println("***** ");
-            System.out.println("No Jobs Found");
-        }
+
         for (HashMap<String, String> someJob : someJobs) {
             System.out.println("***** ");
             for (Map.Entry<String, String> job : someJob.entrySet()) {
@@ -124,6 +121,7 @@ public class TechJobs {
                 }
             }
             System.out.println("***** ");
+            System.out.println("Number of Jobs Found: " + someJobs.size());
         }
     }
 
